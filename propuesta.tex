@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}
+\documentclass[10pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage{hyperref}
@@ -6,26 +6,37 @@
 \geometry{a4paper, margin=1in}
 
 \title{Predicción de Precios de Acciones mediante Redes Neuronales}
-\author{José Antonio Barrientos Sánchez}
+\author{Alumno: José Antonio Barrientos Sánchez}
 \date{\today}
 
 \begin{document}
 
 \maketitle
 
-\section*{Introducción}
 El presente proyecto se centra en la predicción de precios en el mercado de acciones utilizando técnicas de redes neuronales. Para ello, se utilizará el conjunto de datos titulado \emph{Stock Market Data}, obtenido de Kaggle\footnote{\url{https://www.kaggle.com/datasets/paultimothymooney/stock-market-data}}. Este dataset contiene información histórica relevante del mercado, lo que permite analizar patrones y tendencias en el comportamiento de los precios.
 
-El problema a resolver consiste en desarrollar un modelo capaz de predecir futuros valores de las acciones basándose en datos pasados. Este problema es muy interesante para este problema por varias razones:
+El problema a resolver consiste en desarrollar un modelo capaz de predecir futuros valores de las acciones basándose en datos pasados. 
+
+Este problema es muy interesante pues los mercados financieros son complicados, y las redes neuronales aprenden automáticamente las conexiones difíciles entre las variables, así que podemos apoyarnos de las RN con modelos como LSTM o GRU que pueden recordar información importante a lo largo del tiempo, lo que ayuda a prever tendencias futuras basadas en datos pasados.
+
+\subsection*{Variables para el Modelo Predictivo de Valores de Acciones}
 
 \begin{itemize}
-    \item Los mercados financieros son complicados, y las redes neuronales aprenden automáticamente las conexiones difíciles entre las variables.
-    \item  Modelos como LSTM o GRU pueden recordar información importante a lo largo del tiempo, lo que ayuda a prever tendencias futuras basadas en datos pasados.
+    \item \textbf{Variables de entrada (features):}
+    \begin{itemize}
+        \item \textit{Open:} Precio de apertura de la acción.
+        \item \textit{High:} Precio máximo alcanzado durante el período.
+        \item \textit{Low:} Precio mínimo alcanzado durante el período.
+        \item \textit{Volume:} Volumen de transacciones realizadas.
+    \end{itemize}
+    \item \textbf{Variable de salida (target):}
+    \begin{itemize}
+        \item \textit{Close:} Precio de cierre de la acción, o una versión desplazada de este valor para predecir el precio del siguiente período.
+    \end{itemize}
 \end{itemize}
 
 
-
-\section*{Bibliografía Consultada}
+\subsection*{Bibliografía Consultada}
 \begin{itemize}
     \item Kaggle. \textit{Stock Market Data}. Recuperado de \url{https://www.kaggle.com/datasets/paultimothymooney/stock-market-data}
 \end{itemize}
