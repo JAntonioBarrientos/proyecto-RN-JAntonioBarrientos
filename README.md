@@ -1,5 +1,7 @@
 # proyecto-RN-JAntonioBarrientos
 
+**Alumno**: José Antonio Barrientos Sánchez
+
 Este proyecto utiliza un cuaderno de Jupyter para ejecutar y visualizar el código. Para garantizar que todas las dependencias necesarias estén instaladas, se recomienda crear un entorno virtual y usar el archivo `requirements.txt` para instalar las dependencias.
 
 ## Pasos para configurar el entorno
@@ -26,5 +28,5 @@ Este proyecto utiliza un cuaderno de Jupyter para ejecutar y visualizar el códi
 
 4. **Ejecutar el cuaderno de Jupyter**:
     ```bash
-    jupyter notebook
+    jupyter-lab
     ```
